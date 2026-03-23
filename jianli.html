@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>殷嘉琦 - 前端工程师简历</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:
+          "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+      }
+
+      body {
+        background: #f0f0f0;
+        padding: 20px;
+      }
+
+      .resume-container {
+        max-width: 210mm;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* 头部区域 */
+      .header {
+        background: #3a3a3a;
+        color: #fff;
+        padding: 25px 30px;
+      }
+
+      .header h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #666;
+        padding-bottom: 15px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .header-left,
+      .header-right {
+        font-size: 13px;
+        line-height: 1.8;
+      }
+
+      .header-left {
+        margin-bottom: 10px;
+      }
+
+      .header-right {
+        text-align: right;
+      }
+
+      .header-right div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 5px;
+      }
+
+      /* 主体内容 */
+      .main-content {
+        padding: 25px 30px;
+      }
+
+      /* 章节样式 */
+      .section {
+        margin-bottom: 25px;
+      }
+
+      .section-title {
+        background: #f0f0f0;
+        color: #333;
+        padding: 8px 30px;
+        border-radius: 20px;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .intro-text {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #333;
+        text-align: justify;
+      }
+
+      /* 项目部分 */
+      .project {
+        margin-bottom: 20px;
+      }
+
+      .project-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .tech-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 10px;
+      }
+
+      .tech-tag {
+        background: #f5f5f5;
+        border: 1px solid #e0e0e0;
+        border-radius: 3px;
+        padding: 3px 10px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .project-desc {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 8px;
+      }
+
+      .project-details {
+        list-style: none;
+      }
+
+      .project-details li {
+        position: relative;
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 6px;
+      }
+
+      .project-details li::before {
+        content: "■";
+        position: absolute;
+        left: 0;
+        color: #666;
+        font-size: 10px;
+        line-height: 1.8;
+      }
+
+      /* 技能部分 */
+      .skill-list {
+        list-style: none;
+      }
+
+      .skill-list li {
+        position: relative;
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 6px;
+      }
+
+      .skill-list li::before {
+        content: "■";
+        position: absolute;
+        left: 0;
+        color: #666;
+        font-size: 10px;
+        line-height: 1.8;
+      }
+
+      /* 打印样式 */
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+
+        .resume-container {
+          box-shadow: none;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume-container">
+      <!-- 头部 -->
+      <div class="header">
+        <h1>求职简历 - 前端工程师</h1>
+        <div class="header-content">
+          <div class="header-left">
+            <div>殷嘉琦/男/2004-05</div>
+            <div>重庆邮电大学/软件工程</div>
+            <div>本科/2027届（在读）</div>
+          </div>
+          <div class="header-right">
+            <div>
+              <span>🔗</span>
+              <span>https://github.com/1add7</span>
+              <span>（含项目源码）</span>
+            </div>
+            <div>
+              <span>✉</span>
+              <span>18530163403@163.com</span>
+            </div>
+            <div>
+              <span>📱</span>
+              <span>18530163403</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 主体内容 -->
+      <div class="main-content">
+        <!-- 介绍 -->
+        <div class="section">
+          <div class="section-title">介绍</div>
+          <div class="intro-text">
+            重庆邮电大学软件工程本科在读，专注于前端开发，熟练掌握
+            Vue3+TS+Pinia+Vite 等主流技术栈，独立完成电商运营后台，AI
+            知识树学习平台两个全流程前端项目，具备从「项目搭建、功能开发、接口封装、工程化规范到部署上线」的完整开发能力。精通数据可视化、权限控制、工具函数封装，代码规范良好。对
+            AI 协助开发具有一定了解，能够借助 AI 工具完成项目的后端构建和部署。
+          </div>
+        </div>
+
+        <!-- 项目 -->
+        <div class="section">
+          <div class="section-title">项目</div>
+
+          <!-- 项目 1 -->
+          <div class="project">
+            <div class="project-title">电商运营中后台管理项目</div>
+            <div class="tech-tags">
+              <span class="tech-tag">Vue3</span>
+              <span class="tech-tag">TS</span>
+              <span class="tech-tag">VueRouter</span>
+              <span class="tech-tag">Pinia</span>
+              <span class="tech-tag">Element-Plus</span>
+              <span class="tech-tag">ECharts</span>
+              <span class="tech-tag">ESLint</span>
+              <span class="tech-tag">Prettier</span>
+              <span class="tech-tag">Axios</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+            <div class="project-desc">
+              「为掌握企业级前端工程化与后台管理系统核心开发能力，对标企业使用模型开发通用模版。」
+            </div>
+            <ul class="project-details">
+              <li>
+                完成登录、商品 / 权限管理等核心模块 UI 开发，基于 Element-Plus
+                搭建通用组件，结合 CSS3 Flex/Grid 实现响应式布局；
+              </li>
+              <li>
+                通过 Pinia+localStorage 实现 token 持久化，封装 Axios
+                拦截器统一处理接口鉴权、异常提示，保障接口调用安全统一；
+              </li>
+              <li>
+                通过 VueRouter 实现路由守卫（登录 /
+                权限校验），递归渲染后端三级路由数据动态生成侧边栏，实现路由与权限联动；
+              </li>
+              <li>
+                接入 ESLint+Prettier 规范代码风格，减少冲突并提升可维护性；
+              </li>
+              <li>
+                基于 Node.js
+                搭建服务模拟业务数据，解耦前后端开发依赖，提升开发效率。
+              </li>
+            </ul>
+          </div>
+
+          <!-- 项目 2 -->
+          <div class="project">
+            <div class="project-title">AI 知识树学习平台</div>
+            <div class="tech-tags">
+              <span class="tech-tag">Vue3</span>
+              <span class="tech-tag">TS</span>
+              <span class="tech-tag">VueRouter</span>
+              <span class="tech-tag">Pinia</span>
+              <span class="tech-tag">Element-Plus</span>
+              <span class="tech-tag">ECharts</span>
+              <span class="tech-tag">Axios</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+            <div class="project-desc">
+              「通过总结学习过程中遇到的知识碎片化，难以搭建知识体系以及现有 AI
+              对话工具的使用痛点，独立开发的轻量级 AI 知识学习工具，实现了「AI
+              对话 + 知识可视化 + 知识导出 +
+              追溯学习」的全流程，提升知识整理和学习效率」
+            </div>
+            <ul class="project-details">
+              <li>
+                对接开源大模型 API 实现 AI 对话核心功能，封装 API
+                请求函数，处理上下文关联逻辑。
+              </li>
+              <li>
+                使用 ECharts
+                构建树形知识框架，绑定节点点击事件实现「选中节点回溯提问」，强化知识追溯能力；
+              </li>
+              <li>
+                封装工具函数实现知识框架导出为 Markdown/Xmind
+                格式，实现永久化学习过程。
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 技能 -->
+        <div class="section">
+          <div class="section-title">技能</div>
+          <ul class="skill-list">
+            <li>
+              熟练掌握 H5、CSS3、JS、TS，了解 JS 中的闭包，作用域，ES6 +
+              新特性；
+            </li>
+            <li>
+              熟练掌握 Vue 框架，Vite，Webpack 等构建工具，Pinia 状态管理工具；
+            </li>
+            <li>
+              熟悉 ElementUI，Antd 等主流组件框架，能够使用 Prettier、ESLint
+              规范代码格式；
+            </li>
+            <li>
+              了解 HTTP 协议，npm/yarn 等包管理工具，Git 版本控制工具，了解
+              Node.js，Express 框架；
+            </li>
+            <li>熟练使用可视化工具 Echarts 实现展示效果；</li>
+            <li>能够熟练的使用 AI 开发工具提高开发效率和能力；</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
